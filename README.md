@@ -3,6 +3,7 @@
 ## Description
 
 ## Demo
+Very poor result.  
 ![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/20020719_IMG00018.jpg)
 ![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/20020725_IMG00438.jpg)
 ## Requirement
