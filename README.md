@@ -38,7 +38,7 @@ python impulso.py train -e EXPERIMENT-ID [-m MODEL-ID]
 python impulso.py test -e EXPERIMENT-ID -m MODEL-ID
 ```
 
-### Predit
+### Predict
 ```
 python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -i DATA_DIR/DATA_FILE
 ```
@@ -53,14 +53,13 @@ python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -i DATA_DIR/DATA_FILE
 [LotFun](https://github.com/pystokes)
 
 ## Specification
-|Module|Class|Method|Input|Output|
-|:---|:---|:---|:---|:---|
-|impulso|Impulso|```__init__```|hparams_path|-|
-|impulso|Impulso|dataset|-|datasets/{data_id}/x/x.npy <br> datasets/{data_id}/t/t.npy <br> datasets/test/x/x.npy <br> datasets/test/t/t.npy|
-|impulso|Impulso|prepare|-|experiments/{experiment_id}/*|
-|impulso|Impulso|train|-||
-|impulso|Impulso|test|-||
-|impulso|Impulso|estimate|-||
+### Data to prepare by Aggregator.py
+- IMPULSO_HOME: Absolute path to directory impulso.py exists
 
-
-
+|Usage phase|Type|Path|
+|:---|:---|:---|
+|Train|Input|IMPULSO_HOME/datasets/{DATA-ID}/train/x/x.npy
+|Train|Ground Truth|IMPULSO_HOME/datasets/{DATA-ID}/train/t/t.npy
+|Test|Input|IMPULSO_HOME/datasets/test/x/x.npy
+|Test|Ground Truth|IMPULSO_HOME/datasets/test/t/t.npy
+|Test|Image file name|IMPULSO_HOME/datasets/test/x/filename.npy
