@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore.
+datasets/
+experiments/
+org/
+log/
+
+# Keep.
+!.gitkeep
