@@ -4,10 +4,10 @@ __pycache__/
 *$py.class
 
 # Ignore.
-datasets/
-experiments/
-org/
-log/
+datasets/*
+experiments/*
+org/*
+log/*
 
 # Keep.
 !.gitkeep
