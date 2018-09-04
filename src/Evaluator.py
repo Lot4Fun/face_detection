@@ -88,7 +88,7 @@ class Evaluator(object):
         scores.loc[idx, 'FileName'] = 'Average'
         scores.loc[idx, 'RMS'] = avg
 
-        scores.to_csv(os.path.join(self.output_home, 'scores', 'scores.csv'))
+        scores.to_csv(os.path.join(self.output_home, 'scores', 'scores.csv'), index=False)
 
 
 if __name__ == '__main__':

@@ -3,7 +3,7 @@ common:
     height: 128
     width: 128
 dataset:
-  input_path: C:\Users\stokes\Documents\80_Project\git_work\face_segmentation\org\images
+  input_path: null
   test_split: 0.1
 prepare:
   data_id: null
