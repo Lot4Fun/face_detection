@@ -203,10 +203,8 @@ if __name__ == '__main__':
         impulso.load_model()
         impulso.train()
 
-    # Keras can split train data into train and validation data,
-    # So, validation step is not necessary.
     elif args.exec_type == 'validate':
-        pass
+        assert not args.exec_type, 'validate is still disable.'
         #impulso.load_model()
         #impulso.estimate()
         #impulso.evaluate()
