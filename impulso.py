@@ -6,6 +6,7 @@ import os
 os.environ['IMPULSO_HOME'] = os.path.dirname(os.path.abspath(__file__))
 
 import sys
+import json
 import datetime
 import glob
 import argparse
@@ -17,6 +18,8 @@ from src.Estimator import Estimator
 from src.Evaluator import Evaluator
 
 from src.model.SimpleNet import SimpleNet
+
+from keras.models import load_model
 
 from logging import DEBUG, INFO
 from logging import getLogger, StreamHandler, FileHandler, Formatter
@@ -47,9 +50,13 @@ logger.addHandler(file_handler)
 class Impulso(object):
 
     ### 後で追加したい機能
-    # optimizerは外に出す
+    # callbacksも外に出した方がいいなら出す
+    # Kerasのdata augmentationの機能を使う
     # latest機能：data_id, experiment_idを指定しない場合は最新のデータ，experimentを使用する
     # Grid Search機能：python impulso.py grid でGrid Search用のhparamsのセットを作りたい
+    #
+    ### 要注意
+    # utils.check_hparamsがまともに機能していない（特にinput_path, output_pathをhparamsに書くかどうか辺り）
 
     def __init__(self, args, hparams_yaml='hparams.yaml'):
         logger.info('Begin init of Impulso')
@@ -98,30 +105,36 @@ class Impulso(object):
 
 
     def evaluate(self):
-        logger.info('Begin test of Impulso')
+        logger.info('Begin evaluate of Impulso')
         evaluator = Evaluator(self.args.exec_type, self.hparams)
         evaluator.load_data()
         evaluator.evaluate()
-        logger.info('End test of Impulso')
+        logger.info('End evaluate of Impulso')
 
 
     def load_model(self):
         logger.info('Load model')
-        modeler = SimpleNet('common', self.hparams)
+        modeler = SimpleNet(self.args.exec_type, self.hparams)
         modeler.create_model()
-        modeler.select_optimazer()
-        modeler.compile()
-
+        if self.args.exec_type == 'train':
+            modeler.select_optimizer()
+            modeler.compile()
+        """
+        else:
+            model_path = os.path.join(IMPULSO_HOME, 'experiments', f'{self.args.experiment_id}', 'model', 'model.json')
+            with open(model_path, 'r') as f:
+                model_json = json.load(f)
+            modeler.model = model_from_json(model_json)
+        """
         if self.args.experiment_id and self.args.model_id: 
-            weights = glob.glob(os.path.join(IMPULSO_HOME, 'experiments', self.args.experiment_id, 'weights', '*'))
-            while weights:
-                weight = weights.pop(0)
-                i_weight = int(os.path.basename(weight).split('.')[1].split('-')[0])
-                if self.args.model_id == i_weight:
-                    logger.info('Load weight: ' + weight)
-                    self.hparams[self.args.exec_type]['weight'] = weight
-                    modeler.model.load_weights(weight)
-
+            models = glob.glob(os.path.join(IMPULSO_HOME, 'experiments', self.args.experiment_id, 'models', '*'))
+            while models:
+                model = models.pop(0)
+                i_model = int(os.path.basename(model).split('.')[1].split('-')[0])
+                if self.args.model_id == i_model:
+                    logger.info('Load model: ' + model)
+                    self.hparams[self.args.exec_type]['model'] = model
+                    modeler.model = load_model(model)
         self.model = modeler.model
         
 

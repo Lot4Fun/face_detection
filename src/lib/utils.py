@@ -38,12 +38,14 @@ def check_hparams(exec_type, hparams):
     elif exec_type == 'prepare':
         need_keys = ['data_id', 'experiment_id', 'output_path']
     elif exec_type == 'train':
-        need_keys = ['fit', 'optimizer', 'weight', 'batch_size', 'epochs', 'verbose', 
+        need_keys = ['fit', 'optimizer', 'model', 'batch_size', 'epochs', 'verbose', 
                      'validation_split', 'shuffle', 'initial_epoch', 'callbacks']
     elif exec_type == 'validate':
-        need_keys = ['input_path', 'output_path', 'weight']
+        need_keys = ['input_path', 'output_path', 'model']
     elif exec_type == 'test':
-        need_keys = ['input_path', 'output_path', 'weight']
+        need_keys = ['input_path', 'output_path', 'model']
+    elif exec_type == 'predict':
+        need_keys = ['input_path', 'output_path', 'model']
     else:
         logger.error('Unappropriate exec_type in checking hparams')
         sys.exit(1)
@@ -96,15 +98,11 @@ def backup_before_run(exec_type, hparams):
         for key in drop_keys:
             del hparams_to_save[key]
 
-    elif exec_type in ['prepare', 'train']:
+    elif exec_type in ['prepare', 'train', 'test', 'predict']:
         output_home = os.path.join(IMPULSO_HOME, f'experiments/{hparams["prepare"]["experiment_id"]}')
         hparams_to_save = copy.deepcopy(hparams)
         if exec_type == 'prepare':
             del hparams_to_save['dataset']
-    
-    elif exec_type == 'test':
-        output_home = os.path.join(IMPULSO_HOME, f'experiments/{hparams["prepare"]["experiment_id"]}')
-        hparams_to_save = copy.deepcopy(hparams)
 
     else:
         pass

@@ -2,8 +2,8 @@
 # -*- coding: UTF-8 -*-
 
 import os
-from .lib import utils
 import numpy as np
+from .lib import utils
 
 from logging import DEBUG
 from logging import getLogger
@@ -35,7 +35,7 @@ class Trainer(object):
         logger.info('Backup hparams.yaml and src')
         utils.backup_before_run(self.exec_type, self.hparams)
 
-        os.makedirs(os.path.join(self.output_home, 'weights'), exist_ok=True)
+        os.makedirs(os.path.join(self.output_home, 'models'), exist_ok=True)
         logger.info('End init of Trainer')
 
 
@@ -53,9 +53,9 @@ class Trainer(object):
             if self.hparams[self.exec_type]['fit']['callbacks']['ModelCheckpoint']['enable']:
                 logger.info('Enable: ModelCheckpoint')
                 from keras.callbacks import ModelCheckpoint
-                weight_path = os.path.join(self.output_home, f'weights')
-                weight_name = 'weights.{epoch:05d}-{loss:.2f}-{acc:.2f}-{val_loss:.2f}-{val_acc:.2f}.hdf5'
-                self.hparams[self.exec_type]['fit']['callbacks']['ModelCheckpoint']['hparams']['filepath'] = os.path.join(weight_path, weight_name)
+                model_path = os.path.join(self.output_home, f'models')
+                model_name = 'models.{epoch:05d}-{loss:.2f}-{acc:.2f}-{val_loss:.2f}-{val_acc:.2f}.hdf5'
+                self.hparams[self.exec_type]['fit']['callbacks']['ModelCheckpoint']['hparams']['filepath'] = os.path.join(model_path, model_name)
 
                 callback_hparams = self.hparams[self.exec_type]['fit']['callbacks']['ModelCheckpoint']['hparams']
                 callback = ModelCheckpoint(filepath=callback_hparams['filepath'], 

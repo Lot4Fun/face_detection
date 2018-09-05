@@ -53,7 +53,7 @@ python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -i DATA_DIR/DATA_FILE
 [LotFun](https://github.com/pystokes)
 
 ## Specification
-### Data to prepare by Aggregator.py
+### Data to be created with Aggregator.py
 - IMPULSO_HOME: Absolute path to directory impulso.py exists
 
 |Usage phase|Type|Path|

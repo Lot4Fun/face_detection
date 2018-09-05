@@ -7,6 +7,7 @@ import pandas as pd
 import cv2
 from PIL import Image
 from .lib import utils as utils
+from .lib import visualizer
 
 from logging import DEBUG
 from logging import getLogger
@@ -59,6 +60,7 @@ class Evaluator(object):
         logger.info('Evaluating...')
         scores = pd.DataFrame(columns=['FileName', 'RMS'])
 
+        logger.info('Saving result images...')
         for x, y, t, filename in zip(self.x, self.y, self.t, self.filename):
             rms = np.sqrt(np.square(y - t).sum() / y.size)
             # Store with DataFrame
@@ -67,20 +69,9 @@ class Evaluator(object):
             scores.loc[idx, 'RMS'] = rms
 
             # Save Image
-            x_image = Image.fromarray(x)
-            x_image -= np.min(x_image)
-            x_image = np.minimum(x_image, 255)           
-
             resize_h = self.hparams['common']['resize']['height']
             resize_w = self.hparams['common']['resize']['width']            
-            y_image = Image.fromarray(y.reshape(resize_h, resize_w))
-            heatmap = y_image / np.max(y_image)
-            y_image = cv2.applyColorMap(np.uint8(255 * heatmap), cv2.COLORMAP_JET)
-
-            output_image = np.float32(y_image) + np.float32(x_image)
-            output_image = 255 * output_image / np.max(output_image)
-
-            cv2.imwrite(os.path.join(self.output_home, 'figures', filename), output_image)
+            visualizer.save_image(x, y.reshape(resize_h, resize_w), os.path.join(self.output_home, 'figures', filename))
 
         logger.info('Calculate total score')
         avg = scores['RMS'].mean()

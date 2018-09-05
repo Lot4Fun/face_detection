@@ -3,15 +3,15 @@ common:
     height: 128
     width: 128
 dataset:
-  input_path: null
+  input_path: dummy
   test_split: 0.1
 prepare:
-  data_id: null
-  experiment_id: null
+  data_id: dummy
+  experiment_id: dummy
 train:
   fit:
-    batch_size: 3
-    epochs: 10
+    batch_size: 64
+    epochs: 100
     verbose: 1
     validation_split: 0.2
     shuffle: true
@@ -40,17 +40,66 @@ train:
           period: 1
   optimizer:
     SGD:
-      lr: 0.01
-      momentum: 0.9
-      decay: 0.0005
-    Adagrad:
-      add: null
+      enable: false
+      hparams:
+        lr: 0.01
+        momentum: 0.9
+        decay: 0.0005
+        nesterov: False
+    RMSprop: # It is recommended to use the default parameters as below
+      enable: false
+      hparams:
+        lr: 0.001
+        rho: 0.9
+        epsilon: null
+        decay: 0.0
+    Adam: # Below default parameters follow the proposed paper
+      enable: false
+      hparams:
+        lr: 0.001
+        beta_1: 0.9
+        beta_2: 0.999
+        epsilon: null
+        decay: 0.0
+        amsgrad: false
+    Adagrad: # It is recommended to use the default parameters as below
+      enable: true
+      hparams:
+        lr: 0.01
+        epsilon: null
+        decay: 0.0
+    Adadelta: # It is recommended to use the default parameters as below
+      enable: false
+      hparams:
+        lr: 1.0
+        rho: 0.95
+        epsilon: null
+        decay: 0.0
+    Adamax: # Below default parameters follow the proposed paper
+      enable: false
+      hparams:
+        lr: 0.002
+        beta_1: 0.9
+        beta_2: 0.999
+        epsilon: null
+        decay: 0.0
+    Nadam: # Below default parameters follow the proposed paper. It is recommended to use the default parameters.
+      enable: false
+      hparams:
+        lr: 0.002
+        beta_1: 0.9
+        beta_2: 0.999
+        epsilon: null
+        schedule_decay: 0.004
 validate:
-  input_path: ./datasets/XXXX-XXXX-XXXX/validate/x
-  ground_truth_path: ./datasets/XXXX-XXXX-XXXX/validate/t
+  input_path: dummy
+  output_path: dummy
+  model: dummy
 test:
-  input_path: null
-  output_path: null
-  weight: null
+  input_path: dummy
+  output_path: dummy
+  model: dummy
 predict:
-  input_path: ./datasets/estimate
+  input_path: dummy
+  output_path: dummy
+  model: dummy

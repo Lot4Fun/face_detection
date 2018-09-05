@@ -3,6 +3,8 @@
 
 import os
 
+from ..lib import optimizer
+
 import keras
 from keras.layers import Input, Dense, Flatten, BatchNormalization
 from keras.layers import Conv2D, MaxPooling2D
@@ -91,14 +93,10 @@ class VGG16(object):
         logger.info('Finish creating VGG16 model')
 
 
-    def select_optimazer(self):
+    def select_optimizer(self):
 
         logger.info('Create optimizer')
-        sgd = optimizers.SGD(lr=0.01,
-                             momentum=0.9,
-                             decay=0.0005)
-        
-        self.selected_optimizer = sgd
+        self.selected_optimizer = optimizer.select_optimizer(self.hparams[self.exec_type]['optimizer'])
     
 
     def compile(self):

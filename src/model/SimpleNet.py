@@ -3,6 +3,8 @@
 
 import os
 
+from ..lib import optimizer
+
 import keras
 from keras.layers import Input, Dense, Flatten, BatchNormalization
 from keras.layers import Conv2D, MaxPooling2D
@@ -21,6 +23,9 @@ logger = getLogger('impulso')
 logger.info(tf.__version__)
 logger.info(keras.__version__)
 
+# Set HOME directory.
+IMPULSO_HOME = os.environ['IMPULSO_HOME']
+
 
 class SimpleNet(object):
 
@@ -28,6 +33,7 @@ class SimpleNet(object):
         logger.info('Begin init of Aggregator')
         self.exec_type = exec_type
         self.hparams = hparams
+        self.output_home = os.path.join(IMPULSO_HOME, 'experiments', f'{self.hparams["prepare"]["experiment_id"]}', 'model')
 
 
     def create_model(self):
@@ -35,14 +41,19 @@ class SimpleNet(object):
         logger.info('Begin to create VGG16 model')
 
         logger.info('Input layer')
-        input_h = self.hparams[self.exec_type]['resize']['height']
-        input_w = self.hparams[self.exec_type]['resize']['width']
+        input_h = self.hparams['common']['resize']['height']
+        input_w = self.hparams['common']['resize']['width']
         inputs = Input(shape=(input_h, input_w, 3))
 
         logger.info('Block1')
         x = Conv2D(16, (3, 3), activation='relu', padding='same', name='block1_conv1')(inputs)
         x = BatchNormalization()(x)
         x = MaxPooling2D((2, 2), strides=(2, 2), padding='same', name='block1_pool')(x)
+
+        logger.info('Block2')
+        x = Conv2D(32, (3, 3), activation='relu', padding='same', name='block2_conv2')(x)
+        x = BatchNormalization()(x)
+        x = MaxPooling2D((2, 2), strides=(2, 2), padding='same', name='block2_pool')(x)
 
         logger.info('Full Connection')
         flattened = Flatten(name='flatten')(x)
@@ -58,58 +69,20 @@ class SimpleNet(object):
         logger.info('Finish creating ImpulsoNet model')
 
 
-    def select_optimazer(self):
-
+    def select_optimizer(self):
         logger.info('Create optimizer')
-        sgd = optimizers.SGD(lr=0.01,
-                             momentum=0.9,
-                             decay=0.0005)
-        
-        self.selected_optimizer = sgd
+        self.selected_optimizer = optimizer.select_optimizer(self.hparams[self.exec_type]['optimizer'])
     
 
     def compile(self):
-
-        logger.info('Compile VGG16 model')
+        logger.info('Compile model')
         self.model.compile(optimizer=self.selected_optimizer,
                            loss='mean_squared_error',
                            metrics=['accuracy'])
         
         self.model.summary()
-
+    
 
 if __name__ == '__main__':
-
-    import datetime
-
-    os.environ['IMPULSO_HOME'] = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../')
-
-    from logging import StreamHandler, FileHandler, Formatter
-
-    # Set HOME directory.
-    IMPULSO_HOME = os.environ['IMPULSO_HOME']
-
-    # Set loger.
-    log_date = datetime.datetime.today().strftime('%Y%m%d')
-    log_path = os.path.join(IMPULSO_HOME, f'log/log_{log_date}.log')
-    logger.setLevel(DEBUG)
-
-    stream_handler = StreamHandler()
-    file_handler = FileHandler(log_path)
-
-    stream_handler.setLevel(INFO)
-    file_handler.setLevel(DEBUG)
-
-    handler_format = Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    stream_handler.setFormatter(handler_format)
-    file_handler.setFormatter(handler_format)
-
-    logger.addHandler(stream_handler)
-    logger.addHandler(file_handler)
-
-    modeler = ImpulsoNet()
-    modeler.create_model()
-    modeler.select_optimazer()
-    modeler.compile()
-
+    pass
     
