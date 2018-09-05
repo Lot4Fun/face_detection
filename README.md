@@ -3,7 +3,7 @@
 ## Description
 
 ## Demo
-Still very poor results.  
+Still not good results.  
 
 ![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_1.jpg)
 ![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_2.jpg)
