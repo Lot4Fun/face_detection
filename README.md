@@ -42,7 +42,7 @@ python impulso.py test -e EXPERIMENT-ID -m MODEL-ID
 
 ### Predict
 ```
-python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -i DATA_DIR/DATA_FILE
+python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -x DATA_DIR -y OUTPUT_DIR
 ```
 
 ## Contribution
@@ -52,7 +52,7 @@ python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -i DATA_DIR/DATA_FILE
 - Forbidden: Commercial Use  
 
 ## Author
-[LotFun](https://github.com/pystokes)
+[Toshiyuki KITA](https://github.com/pystokes)
 
 ## Specification
 ### Data to be created with Aggregator.py
