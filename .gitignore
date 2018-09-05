@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # Ignore.
-data/*
+data/
 datasets/*
 experiments/*
 org/*
