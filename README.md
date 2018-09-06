@@ -1,6 +1,7 @@
-# __Face Segmentation (In production)__
+# __Face Segmentation__
 
 ## Description
+Detect the face areas and visualize the areas as heatmap.
 
 ## Demo
 These images are the results at the moment.  
@@ -15,6 +16,8 @@ Note: She is Minami HAMABE, a famous actress from Ishikawa prefecture in Japan.
 ![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_6.jpg)
 
 ## Requirement
+tensorflow-gpu==1.4.0  
+Keras==2.1.4  
 
 ## Install
 ```
@@ -22,7 +25,13 @@ git clone https://github.com/pystokes/face_segmentation
 ```
 
 ## Usage
-Modify [hparams.yaml](https://github.com/pystokes/face_segmentation/blob/master/hparams/hparams.yaml) before running following processes.
+### Modify below sources
+1. Modify [Aggregator.py](https://github.com/pystokes/face_segmentation/blob/master/src/Aggregator.py) according to your data (See __Specification__ section below)
+
+2. Create network structure like [ImpulsoNet.py](https://github.com/pystokes/face_segmentation/blob/master/src/model/ImpulsoNet.py) according to your data
+3. Modify [Estimator.py](https://github.com/pystokes/face_segmentation/blob/master/src/Estimator.py) according to your data
+4. Modify [Evaluator.py](https://github.com/pystokes/face_segmentation/blob/master/src/Evaluator.py) according to your data
+5. Modify [hparams.yaml](https://github.com/pystokes/face_segmentation/blob/master/hparams/hparams.yaml) before running following processes.
 
 ### Create dataset
 ```
@@ -52,7 +61,7 @@ python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -x DATA_DIR -y OUTPUT_DI
 
 ## Contribution
 
-## Licence
+## License
 - Permitted: Private Use  
 - Forbidden: Commercial Use  
 
@@ -60,8 +69,8 @@ python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -x DATA_DIR -y OUTPUT_DI
 [Toshiyuki KITA](https://github.com/pystokes)
 
 ## Specification
-### Data to be created with Aggregator.py
-- IMPULSO_HOME: Absolute path to directory impulso.py exists
+### Data to be created with [Aggregator.py](https://github.com/pystokes/face_segmentation/blob/master/src/Aggregator.py)
+- IMPULSO_HOME: Absolute path to directory [impulso.py](https://github.com/pystokes/face_segmentation/blob/master/impulso.py) exists
 
 |Usage phase|Type|Path|
 |:---|:---|:---|
