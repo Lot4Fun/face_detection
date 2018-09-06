@@ -4,9 +4,8 @@
 Detect the face areas and visualize the areas as heatmap.
 
 ## Demo
-These images are the results at the moment.  
-Not successfully detected by multiple people.  
-Note: She is Minami HAMABE, a famous actress from Ishikawa prefecture in Japan.  
+These images are the latest results.  
+Not successfully detected if thera many or small faces.  
 
 ![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_1.jpg)
 ![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_2.jpg)

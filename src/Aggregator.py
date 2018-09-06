@@ -4,8 +4,11 @@
 import os
 import glob
 import json
-import numpy as np
+import copy
 import cv2
+import numpy as np
+from scipy.ndimage.interpolation import shift
+from tqdm import tqdm
 from .lib import utils
 
 from logging import DEBUG
@@ -55,14 +58,14 @@ class Aggregator(object):
             bboxes = json.load(f)
         
         logger.info('Loading images...')
+        resize_w = self.hparams['common']['resize']['width']
+        resize_h = self.hparams['common']['resize']['height']
         images = []
         labels = []
         filenames = []
-        for box in bboxes:
+        for box in tqdm(bboxes):
             image_path = os.path.join(self.hparams[self.exec_type]['input_path'], box['FileName'])
             # Input image
-            resize_w = self.hparams['common']['resize']['width']
-            resize_h = self.hparams['common']['resize']['height']
             image = cv2.imread(image_path)
             org_h, org_w, _ = image.shape
             image = cv2.resize(image, (resize_w, resize_h))
@@ -81,17 +84,51 @@ class Aggregator(object):
             labels.append(label_image.flatten())
             filenames.append(box['FileName'])
 
-        logger.info('Split into train and test data')
         x = np.array(images)
         t = np.array(labels)
         filenames = np.array(filenames)
+
+        logger.info('Shuffle before splitting into train and test data')
+        zipped = list(zip(x, t, filenames))
+        np.random.seed(self.hparams[self.exec_type]['random_seed'])
+        np.random.shuffle(zipped)
+        x, t, filenames = zip(*zipped)
+        x = np.array(x)
+        t = np.array(t)
+        filenames = np.array(filenames)
+        
+        logger.info('Split into train and test data')
         self.x_train, self.x_test = np.split(x, [int(x.shape[0] * (1. - self.hparams[self.exec_type]['test_split']))])
         self.t_train, self.t_test = np.split(t, [int(t.shape[0] * (1. - self.hparams[self.exec_type]['test_split']))])
         self.train_filename, self.test_filename = np.split(filenames, [int(len(filenames) * (1. - self.hparams[self.exec_type]['test_split']))])
-        assert len(self.x_train) == len(self.train_filename), 'Lengths of x_train and train_filename is different'
-        assert len(self.x_test) == len(self.test_filename), 'Lengths of x_test and test_filename is different'
-        logger.info('End loading FDDB dataset')
 
+        logger.info('Begin data augmentation')
+        x_train = copy.deepcopy(self.x_train)
+        t_train = copy.deepcopy(self.t_train)
+
+        if self.hparams[self.exec_type]['augmentation']['shift_down']:
+            max_ratio = self.hparams[self.exec_type]['augmentation']['shift_down']
+            logger.info(f'Shift down max ratio: {max_ratio}')
+            x_list, t_list = [], []
+            for x, t in zip(x_train, t_train):
+                shift_range = int(len(x) * max_ratio)
+                # Shift x
+                x_shifted = shift(input=x, shift=[shift_range, 0, 0], cval=0)
+                mask = np.random.randint(0, 256, shift_range * resize_w * 3).reshape(shift_range, resize_w, 3)
+                x_shifted[:shift_range, :, :] = mask
+                x_list.append(x_shifted)
+                # Shift t
+                t = cv2.resize(t, (resize_w, resize_h))
+                t_shifted = shift(input=t, shift=[shift_range, 0, 0], cval=0)
+                t_shifted = t_shifted.flatten()
+                t_list.append(t_shifted)
+            
+            self.x_train = np.append(self.x_train, np.array(x_list), axis=0)
+            self.t_train = np.append(self.t_train, np.array(t_list), axis=0)
+
+        assert len(self.x_train) == len(self.t_train), 'Lengths of x_train and train_filename is different'
+        assert len(self.x_test) == len(self.t_test) == len(self.test_filename), 'Lengths of test data are different'
+        logger.info('End loading FDDB dataset')
 
 
     def save_data(self):

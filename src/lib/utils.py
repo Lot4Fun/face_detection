@@ -34,7 +34,7 @@ def check_hparams(exec_type, hparams):
     
     logger.info('Check hparams keys')
     if exec_type == 'dataset':
-        need_keys = ['data_id', 'output_train', 'output_test', 'input_path', 'test_split', 'augmentation']
+        need_keys = ['random_seed', 'data_id', 'output_train', 'output_test', 'input_path', 'test_split', 'augmentation']
     elif exec_type == 'prepare':
         need_keys = ['data_id', 'experiment_id', 'output_path']
     elif exec_type == 'train':
