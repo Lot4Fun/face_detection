@@ -17,7 +17,7 @@ from src.Trainer import Trainer
 from src.Estimator import Estimator
 from src.Evaluator import Evaluator
 
-from src.model.SimpleNet import SimpleNet
+from src.model.ImpulsoNet import ImpulsoNet
 
 from keras.models import load_model
 
@@ -50,10 +50,9 @@ logger.addHandler(file_handler)
 class Impulso(object):
 
     ### 後で追加したい機能
-    # callbacksも外に出した方がいいなら出す
-    # Kerasのdata augmentationの機能を使う
+    # Data Augmentation: クラス分類ではないのでKerasの機能は使えないため，自力で実装する
     # latest機能：data_id, experiment_idを指定しない場合は最新のデータ，experimentを使用する
-    # Grid Search機能：python impulso.py grid でGrid Search用のhparamsのセットを作りたい
+    # Grid Search機能：Grid Searchできる機能を追加したい
     #
     ### 要注意
     # utils.check_hparamsがまともに機能していない（特にinput_path, output_pathをhparamsに書くかどうか辺り）
@@ -89,7 +88,7 @@ class Impulso(object):
         logger.info('Begin train of Impulso')
         trainer = Trainer(self.args.exec_type, self.hparams, self.model, self.args.model_id)
         trainer.load_data()
-        trainer.append_callbacks()
+        trainer.get_callbacks()
         trainer.begin_train()
         logger.info('End train of Impulso')
 
@@ -114,7 +113,7 @@ class Impulso(object):
 
     def load_model(self):
         logger.info('Load model')
-        modeler = SimpleNet(self.args.exec_type, self.hparams)
+        modeler = ImpulsoNet(self.args.exec_type, self.hparams)
         modeler.create_model()
         if self.args.exec_type == 'train':
             modeler.select_optimizer()

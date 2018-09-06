@@ -68,13 +68,16 @@ class Aggregator(object):
             image = cv2.resize(image, (resize_w, resize_h))
             images.append(image)
             # Label image
-            label_image = np.zeros(resize_h * resize_w).reshape(resize_h, resize_w)
+            label_image = np.zeros(org_h * org_w).reshape(org_h, org_w)
             for face in box['BBox']:
-                left = int(face['Left'] * resize_w / org_w)
-                top = int(face['Top'] * resize_h / org_h)
-                width = int(face['Width'] * resize_w / org_w)
-                height = int(face['Height'] * resize_h / org_h)
-                label_image[top:top+height+1, left:left+width+1] = 1.
+                Rx = face['Rx']
+                Ry = face['Ry']
+                theta = face['Theta']
+                Cx = face['Cx']
+                Cy = face['Cy']
+                label_image = label_image + self.get_ground_truth(org_h, org_w, Rx, Ry, theta, Cx, Cy)
+            label_image = cv2.resize(label_image, (resize_w, resize_h))
+            label_image = np.vectorize(int)(np.vectorize(bool)(label_image))
             labels.append(label_image.flatten())
             filenames.append(box['FileName'])
 
@@ -88,6 +91,7 @@ class Aggregator(object):
         assert len(self.x_train) == len(self.train_filename), 'Lengths of x_train and train_filename is different'
         assert len(self.x_test) == len(self.test_filename), 'Lengths of x_test and test_filename is different'
         logger.info('End loading FDDB dataset')
+
 
 
     def save_data(self):
@@ -108,6 +112,29 @@ class Aggregator(object):
         np.save(file=os.path.join(test_x_dir, 'filename.npy'), arr=self.test_filename)
 
         logger.info('End saving data')
+    
+    
+    def get_ground_truth(self, height, width, major_axis_radius, minor_axis_radius, theta, center_x, center_y):
+        arr = []
+        for h in range(height):
+            row = list(map(self.judge_pixel_inside,
+                           range(width), [h]*width,
+                           [major_axis_radius]*width, [minor_axis_radius]*width, [theta]*width,
+                           [center_x]*width, [center_y]*width))
+            arr.append(row)
+        return np.array(arr)
+
+
+    def judge_pixel_inside(self, x, y, major_axis_radius, minor_axis_radius, theta, center_x, center_y):
+        term1 = (((x-center_x)*np.cos(theta) + (y-center_y)*np.sin(theta)) / major_axis_radius)**2
+        term2 = (((x-center_x)*(-1)*np.sin(theta) + (y-center_y)*np.cos(theta)) / minor_axis_radius)**2
+        if term1 + term2 - 1 < 0:
+            return 1
+        else:
+            return 0
+
+
+
 
 
 if __name__ == '__main__':

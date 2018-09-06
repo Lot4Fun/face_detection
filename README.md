@@ -3,11 +3,16 @@
 ## Description
 
 ## Demo
-Still not good results.  
+These images are the results at the moment.  
+Not successfully detected by multiple people.  
+Note: She is Minami HAMABE, a famous actress from Ishikawa prefecture in Japan.  
 
 ![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_1.jpg)
 ![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_2.jpg)
 ![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_3.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_4.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_5.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_6.jpg)
 
 ## Requirement
 
@@ -21,7 +26,7 @@ Modify [hparams.yaml](https://github.com/pystokes/face_segmentation/blob/master/
 
 ### Create dataset
 ```
-python impulso.py data
+python impulso.py dataset
 ```
 
 ### Prepare

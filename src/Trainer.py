@@ -5,6 +5,8 @@ import os
 import numpy as np
 from .lib import utils
 
+from .lib.callbacks import select_callbacks 
+
 from logging import DEBUG
 from logging import getLogger
 
@@ -29,6 +31,11 @@ class Trainer(object):
         self.input_home = os.path.join(IMPULSO_HOME, 'datasets', f'{self.hparams["prepare"]["data_id"]}', f'{self.exec_type}')
         self.output_home = os.path.join(IMPULSO_HOME, 'experiments', f'{self.hparams["prepare"]["experiment_id"]}')
 
+        if 'ModelCheckpoint' in self.hparams[self.exec_type]['fit']['callbacks'].keys():
+            model_path = os.path.join(self.output_home, f'models')
+            model_name = 'models.{epoch:05d}-{loss:.2f}-{acc:.2f}-{val_loss:.2f}-{val_acc:.2f}.hdf5'
+            self.hparams[self.exec_type]['fit']['callbacks']['ModelCheckpoint']['hparams']['filepath'] = os.path.join(model_path, model_name)
+
         logger.info('Check hparams.yaml')
         utils.check_hparams(self.exec_type, self.hparams)
 
@@ -45,49 +52,8 @@ class Trainer(object):
         self.t_train = np.load(os.path.join(self.input_home, 't', 't.npy'))
 
 
-    def append_callbacks(self):
-        logger.info('Prepare callbacks')
-        callbacks = []
-
-        if 'ModelCheckpoint' in self.hparams[self.exec_type]['fit']['callbacks'].keys():
-            if self.hparams[self.exec_type]['fit']['callbacks']['ModelCheckpoint']['enable']:
-                logger.info('Enable: ModelCheckpoint')
-                from keras.callbacks import ModelCheckpoint
-                model_path = os.path.join(self.output_home, f'models')
-                model_name = 'models.{epoch:05d}-{loss:.2f}-{acc:.2f}-{val_loss:.2f}-{val_acc:.2f}.hdf5'
-                self.hparams[self.exec_type]['fit']['callbacks']['ModelCheckpoint']['hparams']['filepath'] = os.path.join(model_path, model_name)
-
-                callback_hparams = self.hparams[self.exec_type]['fit']['callbacks']['ModelCheckpoint']['hparams']
-                callback = ModelCheckpoint(filepath=callback_hparams['filepath'], 
-                                           monitor=callback_hparams['monitor'],
-                                           verbose=callback_hparams['verbose'],
-                                           save_best_only=callback_hparams['save_best_only'],
-                                           save_weights_only=callback_hparams['save_weights_only'],
-                                           mode=callback_hparams['mode'],
-                                           period=callback_hparams['period'])
-                callbacks.append(callback)
-            else:
-                logger.info('Disable: ModelCheckpoint')
-        
-        if 'ReduceLROnPlateau' in self.hparams[self.exec_type]['fit']['callbacks'].keys():
-            if self.hparams[self.exec_type]['fit']['callbacks']['ReduceLROnPlateau']['enable']:
-                logger.info('Enable: ReduceLROnPlateau')
-                from keras.callbacks import ReduceLROnPlateau
-                callback_hparams = self.hparams[self.exec_type]['fit']['callbacks']['ReduceLROnPlateau']['hparams']
-                callback = ReduceLROnPlateau(monitor=callback_hparams['monitor'],
-                                             factor=callback_hparams['factor'],
-                                             patience=callback_hparams['patience'],
-                                             verbose=callback_hparams['verbose'],
-                                             mode=callback_hparams['mode'],
-                                             epsilon=callback_hparams['epsilon'],
-                                             cooldown=callback_hparams['cooldown'],
-                                             min_lr=callback_hparams['min_lr'])
-                callbacks.append(callback)
-            else:
-                logger.info(f'Disable callback:{callback}')
-            
-        self.callbacks = callbacks
-
+    def get_callbacks(self):
+        self.callbacks = select_callbacks(self.hparams[self.exec_type]['fit']['callbacks'])
 
     def begin_train(self):
         hparams_fit = self.hparams[self.exec_type]['fit']

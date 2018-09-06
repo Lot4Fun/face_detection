@@ -13,7 +13,7 @@ logger.setLevel(DEBUG)
 def select_optimizer(hparams):
     """
     Args:
-        hparams: hparams['train']['optimizer] of hparams.yaml
+        hparams: hparams['train']['optimizer'] of hparams.yaml
     """
 
     logger.info('Select optimizer')

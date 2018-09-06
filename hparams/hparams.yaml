@@ -3,20 +3,22 @@ common:
     height: 128
     width: 128
 dataset:
-  input_path: dummy
+  input_path: ./org/images_ellipse
   test_split: 0.1
-  augmentation:
+  augmentation: # In Production
     rotate_minmax: 20 # Rotate from -'rotate_minmax' to 'rotate_minmax' in degree
     horizontal_flip: true
     vertial_flip: false
-    shift_down: 0.3 # Maximum ratio to shift down
+    shift_down: 0 # Maximum ratio to shift down
     shift_up: 0 # Maximum ratio to shift down
+    cut_bottom: 0.3 # Maximum ratio to cut bottom
+    random_slide: true # Slide ground truth face area for robustness
 prepare:
   data_id: dummy
   experiment_id: dummy
 train:
   fit:
-    batch_size: 64
+    batch_size: 16
     epochs: 100
     verbose: 1
     validation_split: 0.2
@@ -27,7 +29,7 @@ train:
         enable: true
         hparams:
           monitor: val_loss
-          factor: 0.1
+          factor: 0.2
           patience: 5
           verbose: 1
           mode: auto
@@ -43,7 +45,15 @@ train:
           save_best_only: false
           save_weights_only: false
           mode: auto
-          period: 1
+          period: 10
+      EarlyStopping:
+        enable: true
+        hparams:
+          monitor: val_loss
+          min_delta: 0.00001
+          patience: 10
+          verbose: 0
+          mode: auto
   optimizer:
     SGD:
       enable: false
@@ -60,7 +70,7 @@ train:
         epsilon: null
         decay: 0.0
     Adam: # Below default parameters follow the proposed paper
-      enable: false
+      enable: true
       hparams:
         lr: 0.001
         beta_1: 0.9
@@ -69,7 +79,7 @@ train:
         decay: 0.0
         amsgrad: false
     Adagrad: # It is recommended to use the default parameters as below
-      enable: true
+      enable: false
       hparams:
         lr: 0.01
         epsilon: null
