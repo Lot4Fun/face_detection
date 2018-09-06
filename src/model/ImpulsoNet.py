@@ -12,7 +12,6 @@ from keras.models import Model
 from keras.layers.core import Dropout
 from keras import optimizers
 import tensorflow as tf
-from keras.callbacks import ReduceLROnPlateau, TensorBoard
 
 from logging import DEBUG, INFO
 from logging import getLogger
@@ -58,6 +57,8 @@ class ImpulsoNet(object):
         flattened = Flatten(name='flatten')(x)
         x = Dense(128, activation='relu', name='fc1')(flattened)
         x = Dropout(0.5, name='dropout1')(x)
+        x = Dense(128, activation='relu', name='fc2')(x)
+        x = Dropout(0.5, name='dropout2')(x)
 
         logger.info('Output layer')
         predictions = Dense(input_h * input_w, activation='sigmoid', name='predictions')(x)
@@ -69,7 +70,7 @@ class ImpulsoNet(object):
 
 
     def select_optimizer(self):
-        logger.info('Create optimizer')
+        logger.info('Select optimizer')
         self.selected_optimizer = optimizer.select_optimizer(self.hparams[self.exec_type]['optimizer'])
     
 

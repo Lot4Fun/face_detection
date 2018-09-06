@@ -16,7 +16,7 @@ def save_image(x_arr, y_arr, output_path):
 
     x_image = Image.fromarray(x_arr)
     x_image -= np.min(x_image)
-    x_image = np.minimum(x_image, 255)           
+    x_image = np.minimum(x_image, 255)
 
     y_image = Image.fromarray(y_arr)
     heatmap = y_image / np.max(y_image)

@@ -6,6 +6,7 @@ dataset:
   input_path: ./org/images_ellipse
   test_split: 0.1
   augmentation: # In Production
+    without_face: true
     rotate_minmax: 20 # Rotate from -'rotate_minmax' to 'rotate_minmax' in degree
     horizontal_flip: true
     vertial_flip: false

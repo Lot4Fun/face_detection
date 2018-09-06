@@ -125,7 +125,7 @@ class Impulso(object):
                 model_json = json.load(f)
             modeler.model = model_from_json(model_json)
         """
-        if self.args.experiment_id and self.args.model_id: 
+        if self.args.experiment_id and self.args.model_id:
             models = glob.glob(os.path.join(IMPULSO_HOME, 'experiments', self.args.experiment_id, 'models', '*'))
             while models:
                 model = models.pop(0)

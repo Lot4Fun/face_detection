@@ -24,9 +24,10 @@ class Trainer(object):
         self.exec_type = exec_type
         self.hparams = hparams
         if model_id:
-            self.hparams[exec_type]['fit']['initial_epoch'] = model_id
+            self.hparams[self.exec_type]['fit']['epochs'] = self.hparams[self.exec_type]['fit']['epochs'] + model_id
+            self.hparams[self.exec_type]['fit']['initial_epoch'] = model_id            
         else:
-            self.hparams[exec_type]['fit']['initial_epoch'] = 0            
+            self.hparams[self.exec_type]['fit']['initial_epoch'] = 0            
         self.model = model
         self.input_home = os.path.join(IMPULSO_HOME, 'datasets', f'{self.hparams["prepare"]["data_id"]}', f'{self.exec_type}')
         self.output_home = os.path.join(IMPULSO_HOME, 'experiments', f'{self.hparams["prepare"]["experiment_id"]}')
