@@ -137,10 +137,14 @@ class Aggregator(object):
             x_list, t_list = [], []
             for x, t, n_face in tqdm(zip(x_train, t_train, self.train_faces)):
                 # Judge the number of loop by the nubmer of faces
-                if n_face == 3:
-                    n_loop = 2 - 1
+                if n_face == 0:
+                    n_loop = 4
+                elif n_face == 2:
+                    n_loop = 1
+                elif n_face == 3:
+                    n_loop = 4
                 elif n_face == 4:
-                    n_loop = 5 - 1
+                    n_loop = 9
                 else:
                     continue
                 # Rebalance the number of face images
