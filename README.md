@@ -5,14 +5,23 @@ Detect the face areas and visualize the areas as heatmap.
 
 ## Demo
 These images are the latest results.  
-Not successfully detected if thera many or small faces.  
+Not successfully detected if there are many or small faces.  
 
-![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_1.jpg)
-![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_2.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_3.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_4.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_5.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/hamabe_minami_6.jpg)
+### 1st results
+![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/1st/hamabe_minami_1.jpg)
+![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/1st/hamabe_minami_2.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/1st/hamabe_minami_3.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/1st/hamabe_minami_4.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/1st/hamabe_minami_5.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/1st/hamabe_minami_6.jpg)
+
+### 2nd results
+![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/2nd/hamabe_minami_1.jpg)
+![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/2nd/hamabe_minami_2.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/2nd/hamabe_minami_3.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/2nd/hamabe_minami_4.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/2nd/hamabe_minami_5.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/2nd/hamabe_minami_6.jpg)
 
 ## Requirement
 tensorflow-gpu==1.4.0  

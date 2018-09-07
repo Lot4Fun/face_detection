@@ -53,82 +53,141 @@ class Aggregator(object):
 
 
     def load_data(self):
-        logger.info('Load FDDB dataset')
-        with open(os.path.join(self.hparams[self.exec_type]['input_path'], 'bbox.json')) as f:
-            bboxes = json.load(f)
-        
-        logger.info('Loading images...')
+        logger.info('Load dataset')
         resize_w = self.hparams['common']['resize']['width']
         resize_h = self.hparams['common']['resize']['height']
-        images = []
-        labels = []
-        filenames = []
-        for box in tqdm(bboxes):
-            image_path = os.path.join(self.hparams[self.exec_type]['input_path'], box['FileName'])
-            # Input image
-            image = cv2.imread(image_path)
-            org_h, org_w, _ = image.shape
-            image = cv2.resize(image, (resize_w, resize_h))
-            images.append(image)
-            # Label image
-            label_image = np.zeros(org_h * org_w).reshape(org_h, org_w)
-            for face in box['BBox']:
-                Rx = face['Rx']
-                Ry = face['Ry']
-                theta = face['Theta']
-                Cx = face['Cx']
-                Cy = face['Cy']
-                label_image = label_image + self.get_ground_truth(org_h, org_w, Rx, Ry, theta, Cx, Cy)
-            label_image = cv2.resize(label_image, (resize_w, resize_h))
-            label_image = np.vectorize(int)(np.vectorize(bool)(label_image))
-            labels.append(label_image.flatten())
-            filenames.append(box['FileName'])
+        usable_data = []
+        # Select images' sources
+        usable_data.append(self.hparams[self.exec_type]['input_path'])
+        if self.hparams[self.exec_type]['augmentation']['without_face']:
+            usable_data.append(self.hparams[self.exec_type]['augmentation']['without_face'])
 
-        x = np.array(images)
-        t = np.array(labels)
-        filenames = np.array(filenames)
+        # Load images
+        x, t, filenames = [], [], []
+        faces_info = [] # Not saved. Used for balance_n_face augmentation.
+        for data_source in usable_data:
+            with open(os.path.join(data_source, 'bbox.json')) as f:
+                bboxes = json.load(f)
+            
+            logger.info(f'Loading images in {data_source}')
+            images = []
+            labels = []
+            image_names = []
+            n_faces = []
+            for box in tqdm(bboxes):
+                image_path = os.path.join(data_source, box['FileName'])
+                # Input image
+                image = cv2.imread(image_path)
+                org_h, org_w, _ = image.shape
+                image = cv2.resize(image, (resize_w, resize_h))
+                images.append(image)
+                # Label image
+                label_image = np.zeros(org_h * org_w).reshape(org_h, org_w)
+                for face in box['BBox']:
+                    Rx = face['Rx']
+                    Ry = face['Ry']
+                    theta = face['Theta']
+                    Cx = face['Cx']
+                    Cy = face['Cy']
+                    label_image = label_image + self.get_ground_truth(org_h, org_w, Rx, Ry, theta, Cx, Cy)
+                label_image = cv2.resize(label_image, (resize_w, resize_h))
+                label_image = np.vectorize(int)(np.vectorize(bool)(label_image))
+                labels.append(label_image.flatten())
+                image_names.append(box['FileName'])
+                n_faces.append(len(box['BBox']))
+
+            x.append(np.array(images))
+            t.append(np.array(labels))
+            filenames.append(np.array(image_names))
+            faces_info.append(np.array(n_faces))
+
+        # Transform list to numpy array
+        if len(usable_data) == 1:
+            x, t, filenames, faces = x[0], t[0], filenames[0], faces_info[0]
+        elif len(usable_data) == 2:
+            x = np.append(x[0], x[1], axis=0)
+            t = np.append(t[0], t[1], axis=0)
+            filenames = np.append(filenames[0], filenames[1])
+            faces = np.append(faces_info[0], faces_info[1])
+        else:
+            assert False, f'You have {len(usable_data)} data sources.'
 
         logger.info('Shuffle before splitting into train and test data')
-        zipped = list(zip(x, t, filenames))
+        zipped = list(zip(x, t, filenames, faces))
         np.random.seed(self.hparams[self.exec_type]['random_seed'])
         np.random.shuffle(zipped)
-        x, t, filenames = zip(*zipped)
+        x, t, filenames, faces = zip(*zipped)
         x = np.array(x)
         t = np.array(t)
         filenames = np.array(filenames)
+        faces = np.array(faces)
         
         logger.info('Split into train and test data')
         self.x_train, self.x_test = np.split(x, [int(x.shape[0] * (1. - self.hparams[self.exec_type]['test_split']))])
         self.t_train, self.t_test = np.split(t, [int(t.shape[0] * (1. - self.hparams[self.exec_type]['test_split']))])
-        self.train_filename, self.test_filename = np.split(filenames, [int(len(filenames) * (1. - self.hparams[self.exec_type]['test_split']))])
+        _, self.test_filename = np.split(filenames, [int(len(filenames) * (1. - self.hparams[self.exec_type]['test_split']))])
+        self.train_faces, _ = np.split(faces, [int(len(faces) * (1. - self.hparams[self.exec_type]['test_split']))])
 
         logger.info('Begin data augmentation')
         x_train = copy.deepcopy(self.x_train)
         t_train = copy.deepcopy(self.t_train)
 
+        if self.hparams[self.exec_type]['augmentation']['balance_n_face']:
+            logger.info('Balance the number of face images')
+            x_list, t_list = [], []
+            for x, t, n_face in tqdm(zip(x_train, t_train, self.train_faces)):
+                # Judge the number of loop by the nubmer of faces
+                if n_face == 3:
+                    n_loop = 2 - 1
+                elif n_face == 4:
+                    n_loop = 5 - 1
+                else:
+                    continue
+                # Rebalance the number of face images
+                for _ in range(n_loop):
+                    x_list.append(x)
+                    t_list.append(t)
+            self.x_train = np.append(self.x_train, np.array(x_list), axis=0)
+            self.t_train = np.append(self.t_train, np.array(t_list), axis=0)
+
+            assert len(self.x_train) == len(self.t_train), 'Not successfully rebalanced by the number of faces'
+
         if self.hparams[self.exec_type]['augmentation']['shift_down']:
+            np.random.seed(self.hparams[self.exec_type]['random_seed'])
             max_ratio = self.hparams[self.exec_type]['augmentation']['shift_down']
             logger.info(f'Shift down max ratio: {max_ratio}')
+            x_train = copy.deepcopy(self.x_train) # Copy again because shift all images down
+            t_train = copy.deepcopy(self.t_train) # Copy again because shift all images down
             x_list, t_list = [], []
-            for x, t in zip(x_train, t_train):
-                shift_range = int(len(x) * max_ratio)
+            for x, t in tqdm(zip(x_train, t_train)):
+                random_ratio = (max_ratio - 0.0) * np.random.rand() + 0.0 # random value in [0.0, max_ratio)
+                shift_range = int(len(x) * random_ratio)
                 # Shift x
                 x_shifted = shift(input=x, shift=[shift_range, 0, 0], cval=0)
                 mask = np.random.randint(0, 256, shift_range * resize_w * 3).reshape(shift_range, resize_w, 3)
                 x_shifted[:shift_range, :, :] = mask
                 x_list.append(x_shifted)
                 # Shift t
-                t = cv2.resize(t, (resize_w, resize_h))
-                t_shifted = shift(input=t, shift=[shift_range, 0, 0], cval=0)
+                t = t.reshape(resize_h, resize_w)
+                t_shifted = shift(input=t, shift=[shift_range, 0], cval=0)
                 t_shifted = t_shifted.flatten()
                 t_list.append(t_shifted)
+
             
             self.x_train = np.append(self.x_train, np.array(x_list), axis=0)
             self.t_train = np.append(self.t_train, np.array(t_list), axis=0)
 
+        logger.info('Shuffle after data augmentation')
+        zipped = list(zip(self.x_train, self.t_train))
+        np.random.seed(self.hparams[self.exec_type]['random_seed'])
+        np.random.shuffle(zipped)
+        x, t = zip(*zipped)
+        self.x_train = np.array(x)
+        self.t_train = np.array(t)
+
         assert len(self.x_train) == len(self.t_train), 'Lengths of x_train and train_filename is different'
         assert len(self.x_test) == len(self.t_test) == len(self.test_filename), 'Lengths of test data are different'
-        logger.info('End loading FDDB dataset')
+        logger.info('End loading dataset')
 
 
     def save_data(self):
@@ -143,7 +202,7 @@ class Aggregator(object):
         
         np.save(file=os.path.join(train_x_dir, 'x.npy'), arr=self.x_train)
         np.save(file=os.path.join(train_t_dir, 't.npy'), arr=self.t_train)
-        np.save(file=os.path.join(train_x_dir, 'filename.npy'), arr=self.train_filename)
+        #np.save(file=os.path.join(train_x_dir, 'filename.npy'), arr=self.train_filename)
         np.save(file=os.path.join(test_x_dir, 'x.npy'), arr=self.x_test)
         np.save(file=os.path.join(test_t_dir, 't.npy'), arr=self.t_test)
         np.save(file=os.path.join(test_x_dir, 'filename.npy'), arr=self.test_filename)

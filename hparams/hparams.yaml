@@ -8,7 +8,8 @@ dataset:
   test_split: 0.1
   augmentation:
     without_face: C:\Users\stokes\Documents\80_Project\git_work\face_segmentation\org\original_no_faces
-    shift_down: 0.3 # Maximum ratio to shift down
+    shift_down: 0.5 # Maximum ratio to shift down
+    balance_n_face: true
     rotate_minmax: unsupported # Rotate from -'rotate_minmax' to 'rotate_minmax' in degree
     horizontal_flip: unsupported
     vertial_flip: unsupported
