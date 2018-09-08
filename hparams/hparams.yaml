@@ -22,7 +22,7 @@ prepare:
 train:
   fit:
     batch_size: 16
-    epochs: 100
+    epochs: 1000
     verbose: 1
     validation_split: 0.2
     shuffle: true
@@ -38,7 +38,7 @@ train:
           mode: auto
           epsilon: 0.0001
           cooldown: 0
-          min_lr: 0.00001
+          min_lr: 0.00000001
       ModelCheckpoint:
         enable: true
         hparams:
@@ -50,7 +50,7 @@ train:
           mode: auto
           period: 10
       EarlyStopping:
-        enable: true
+        enable: false
         hparams:
           monitor: val_loss
           min_delta: 0.00001

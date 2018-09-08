@@ -36,7 +36,7 @@ class ImpulsoNet(object):
 
     def create_model(self):
 
-        logger.info('Begin to create VGG16 model')
+        logger.info('Begin to create ImpulsoNet model')
 
         logger.info('Input layer')
         input_h = self.hparams['common']['resize']['height']
