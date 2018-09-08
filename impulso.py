@@ -50,7 +50,6 @@ logger.addHandler(file_handler)
 class Impulso(object):
 
     ### 後で追加したい機能
-    # Data Augmentation: クラス分類ではないのでKerasの機能は使えないため，自力で実装する
     # latest機能：data_id, experiment_idを指定しない場合は最新のデータ，experimentを使用する
     # Grid Search機能：Grid Searchできる機能を追加したい
     #
@@ -118,13 +117,6 @@ class Impulso(object):
         if self.args.exec_type == 'train':
             modeler.select_optimizer()
             modeler.compile()
-        """
-        else:
-            model_path = os.path.join(IMPULSO_HOME, 'experiments', f'{self.args.experiment_id}', 'model', 'model.json')
-            with open(model_path, 'r') as f:
-                model_json = json.load(f)
-            modeler.model = model_from_json(model_json)
-        """
         if self.args.experiment_id and self.args.model_id:
             models = glob.glob(os.path.join(IMPULSO_HOME, 'experiments', self.args.experiment_id, 'models', '*'))
             while models:

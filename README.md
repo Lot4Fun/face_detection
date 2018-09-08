@@ -23,6 +23,39 @@ Not successfully detected if there are many or small faces.
 ![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/2nd/hamabe_minami_5.jpg)
 ![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/2nd/hamabe_minami_6.jpg)
 
+### 3rd results
+![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/3rd/hamabe_minami_1.jpg)
+![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/3rd/hamabe_minami_2.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/3rd/hamabe_minami_3.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/3rd/hamabe_minami_4.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/3rd/hamabe_minami_5.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/3rd/hamabe_minami_6.jpg)
+
+### 4th results
+![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/4th/hamabe_minami_1.jpg)
+![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/4th/hamabe_minami_2.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/4th/hamabe_minami_3.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/4th/hamabe_minami_4.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/4th/hamabe_minami_5.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/4th/hamabe_minami_6.jpg)
+
+### 5th results
+![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/5th/hamabe_minami_1.jpg)
+![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/5th/hamabe_minami_2.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/5th/hamabe_minami_3.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/5th/hamabe_minami_4.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/5th/hamabe_minami_5.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/5th/hamabe_minami_6.jpg)
+
+### 6th results
+![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/6th/hamabe_minami_1.jpg)
+![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/6th/hamabe_minami_2.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/6th/hamabe_minami_3.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/6th/hamabe_minami_4.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/6th/hamabe_minami_5.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/6th/hamabe_minami_6.jpg)
+
+
 ## Requirement
 tensorflow-gpu==1.4.0  
 Keras==2.1.4  
@@ -66,8 +99,6 @@ python impulso.py test -e EXPERIMENT-ID -m MODEL-ID
 ```
 python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -x DATA_DIR -y OUTPUT_DIR
 ```
-
-## Contribution
 
 ## License
 - Permitted: Private Use  

@@ -181,6 +181,41 @@ class Aggregator(object):
             self.x_train = np.append(self.x_train, np.array(x_list), axis=0)
             self.t_train = np.append(self.t_train, np.array(t_list), axis=0)
 
+        if self.hparams[self.exec_type]['augmentation']['random_shift']:
+            np.random.seed(self.hparams[self.exec_type]['random_seed'])
+            max_pixel = self.hparams[self.exec_type]['augmentation']['random_shift']
+            logger.info(f'Random shift max pixel: {max_pixel}')
+            x_list = [] # Not need self.t_train because the order does not change
+            for x, t in tqdm(zip(self.x_train, self.t_train)):
+                shift_direction = np.random.choice(['up', 'donw', 'left', 'right'])
+                # Shift range
+                if shift_direction in ['up', 'left']:
+                    shift_range = -np.random.randint(max_pixel+1)
+                else:
+                    shift_range = np.random.randint(max_pixel+1)
+                # Shift
+                if shift_direction in ['up', 'down'] and shift_range > 0:
+                    x_shifted = shift(input=x, shift=[shift_range, 0, 0], cval=0)
+                    mask = np.random.randint(0, 256, abs(shift_range) * resize_w * 3).reshape(abs(shift_range), resize_w, 3)
+                    if shift_direction == 'up':
+                        x_shifted[-abs(shift_range):, :, :] = mask
+                    else:
+                        x_shifted[:abs(shift_range), :, :] = mask
+                elif shift_direction in ['left', 'right'] and shift_range > 0:
+                    x_shifted = shift(input=x, shift=[0, shift_range, 0], cval=0)
+                    mask = np.random.randint(0, 256, resize_h * abs(shift_range) * 3).reshape(resize_h, abs(shift_range), 3)
+                    if shift_direction == 'left':
+                        x_shifted[:, -abs(shift_range):, :] = mask
+                    else:
+                        x_shifted[:, :abs(shift_range), :] = mask
+                else:
+                    pass
+                
+                x_list.append(x_shifted)
+            
+            self.x_train = np.array(x_list)
+
+
         logger.info('Shuffle after data augmentation')
         zipped = list(zip(self.x_train, self.t_train))
         np.random.seed(self.hparams[self.exec_type]['random_seed'])
@@ -232,9 +267,6 @@ class Aggregator(object):
             return 1
         else:
             return 0
-
-
-
 
 
 if __name__ == '__main__':

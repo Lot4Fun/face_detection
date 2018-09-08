@@ -29,10 +29,9 @@ IMPULSO_HOME = os.environ['IMPULSO_HOME']
 class ImpulsoNet(object):
 
     def __init__(self, exec_type, hparams):
-        logger.info('Begin init of Aggregator')
+        logger.info('Begin init of ImpulsoNet')
         self.exec_type = exec_type
         self.hparams = hparams
-        self.output_home = os.path.join(IMPULSO_HOME, 'experiments', f'{self.hparams["prepare"]["experiment_id"]}', 'model')
 
 
     def create_model(self):
@@ -53,11 +52,20 @@ class ImpulsoNet(object):
         x = BatchNormalization()(x)
         x = MaxPooling2D((2, 2), strides=(2, 2), padding='same', name='block1_pool')(x)
 
+        logger.info('Block2')
+        x = Conv2D(32, (3, 3), activation='relu', padding='same', name='block2_conv1')(x)
+        x = BatchNormalization()(x)
+        x = Conv2D(32, (3, 3), activation='relu', padding='same', name='block2_conv2')(x)
+        x = BatchNormalization()(x)
+        #x = Conv2D(32, (3, 3), activation='relu', padding='same', name='block2_conv3')(x)
+        #x = BatchNormalization()(x)
+        x = MaxPooling2D((2, 2), strides=(2, 2), padding='same', name='block2_pool')(x)
+
         logger.info('Full Connection')
         flattened = Flatten(name='flatten')(x)
-        x = Dense(128, activation='relu', name='fc1')(flattened)
+        x = Dense(256, activation='relu', name='fc1')(flattened)
         x = Dropout(0.5, name='dropout1')(x)
-        x = Dense(128, activation='relu', name='fc2')(x)
+        x = Dense(256, activation='relu', name='fc2')(x)
         x = Dropout(0.5, name='dropout2')(x)
 
         logger.info('Output layer')
