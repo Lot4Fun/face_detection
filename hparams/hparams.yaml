@@ -4,7 +4,7 @@ common:
     width: 128
 dataset:
   random_seed: 1
-  input_path: C:\Users\stokes\Documents\80_Project\git_work\face_segmentation\org\wider
+  input_path: .\org\dataset
   test_split: 0.1
   augmentation:
     without_face: false
