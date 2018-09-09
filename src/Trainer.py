@@ -34,7 +34,7 @@ class Trainer(object):
 
         if 'ModelCheckpoint' in self.hparams[self.exec_type]['fit']['callbacks'].keys():
             model_path = os.path.join(self.output_home, f'models')
-            model_name = 'models.{epoch:05d}-{loss:.2f}-{acc:.2f}-{val_loss:.2f}-{val_acc:.2f}.hdf5'
+            model_name = 'model.{epoch:05d}-{loss:.2f}-{acc:.2f}-{val_loss:.2f}-{val_acc:.2f}.hdf5'
             self.hparams[self.exec_type]['fit']['callbacks']['ModelCheckpoint']['hparams']['filepath'] = os.path.join(model_path, model_name)
 
         logger.info('Check hparams.yaml')

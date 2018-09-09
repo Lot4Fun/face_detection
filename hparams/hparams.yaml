@@ -4,13 +4,13 @@ common:
     width: 128
 dataset:
   random_seed: 1
-  input_path: C:\Users\stokes\Documents\80_Project\git_work\face_segmentation\org\fddb_ellipse
+  input_path: C:\Users\stokes\Documents\80_Project\git_work\face_segmentation\org\wider
   test_split: 0.1
   augmentation:
-    without_face: C:\Users\stokes\Documents\80_Project\git_work\face_segmentation\org\original_no_faces
-    shift_down: 0.5 # Maximum ratio to shift down
-    balance_n_face: true
-    random_shift: 5 # Maximum pixels to shift only the input image upwards, downwards, to the left or right for robustness
+    without_face: false
+    shift_down: 0 # Maximum ratio to shift down
+    balance_n_face: false
+    random_shift: 0 # Maximum pixels to shift only the input image upwards, downwards, to the left or right for robustness
     rotate_minmax: unsupported # Rotate from -'rotate_minmax' to 'rotate_minmax' in degree
     horizontal_flip: unsupported
     vertial_flip: unsupported
@@ -38,7 +38,7 @@ train:
           mode: auto
           epsilon: 0.0001
           cooldown: 0
-          min_lr: 0.00000001
+          min_lr: 0.00001
       ModelCheckpoint:
         enable: true
         hparams:
@@ -50,7 +50,7 @@ train:
           mode: auto
           period: 10
       EarlyStopping:
-        enable: false
+        enable: true
         hparams:
           monitor: val_loss
           min_delta: 0.00001

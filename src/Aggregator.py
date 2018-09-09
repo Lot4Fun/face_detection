@@ -82,6 +82,8 @@ class Aggregator(object):
                 image = cv2.resize(image, (resize_w, resize_h))
                 images.append(image)
                 # Label image
+                """
+                # For ellipse data: BEGIN
                 label_image = np.zeros(org_h * org_w).reshape(org_h, org_w)
                 for face in box['BBox']:
                     Rx = face['Rx']
@@ -92,6 +94,17 @@ class Aggregator(object):
                     label_image = label_image + self.get_ground_truth(org_h, org_w, Rx, Ry, theta, Cx, Cy)
                 label_image = cv2.resize(label_image, (resize_w, resize_h))
                 label_image = np.vectorize(int)(np.vectorize(bool)(label_image))
+                # For ellipse data: END
+                """
+                # For rectangle data: BEGIN
+                label_image = np.zeros(resize_h * resize_w).reshape(resize_h, resize_w)
+                for face in box['BBox']:
+                    left = int(face['Left'] * resize_w / org_w) 
+                    top = int(face['Top'] * resize_h / org_h) 
+                    width = int(face['Width'] * resize_w / org_w) 
+                    height = int(face['Height'] * resize_h / org_h) 
+                    label_image[top:top+height+1, left:left+width+1] = 1. 
+                # For rectangle data: END
                 labels.append(label_image.flatten())
                 image_names.append(box['FileName'])
                 n_faces.append(len(box['BBox']))

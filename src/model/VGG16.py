@@ -76,7 +76,6 @@ class VGG16(object):
         logger.info('Block5')
         x = Conv2D(512, (3, 3), activation='relu', padding='same', name='block5_conv1')(x)
         x = BatchNormalization()(x)
-        x = BatchNormalization()(x)
         x = Conv2D(512, (3, 3), activation='relu', padding='same', name='block5_conv2')(x)
         x = BatchNormalization()(x)
         x = Conv2D(512, (3, 3), activation='relu', padding='same', name='block5_conv3')(x)
