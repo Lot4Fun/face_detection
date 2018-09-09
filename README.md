@@ -72,7 +72,7 @@ python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -x DATA_DIR -y OUTPUT_DI
 - Forbidden: Commercial Use  
 
 ## Author
-[Toshiyuki KITA](https://github.com/pystokes)
+[LotFun](https://github.com/pystokes)
 
 ## Specification
 ### Data to be created with [Aggregator.py](https://github.com/pystokes/face_segmentation/blob/master/src/Aggregator.py)
