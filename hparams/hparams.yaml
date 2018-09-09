@@ -4,7 +4,7 @@ common:
     width: 128
 dataset:
   random_seed: 1
-  input_path: ./org/xxxxx
+  input_path: null
   test_split: 0.1
   augmentation:
     without_face: false
