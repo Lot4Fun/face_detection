@@ -42,7 +42,7 @@ class ImpulsoNet(object):
         input_h = self.hparams['common']['resize']['height']
         input_w = self.hparams['common']['resize']['width']
         inputs = Input(shape=(input_h, input_w, 3))
-
+        
         logger.info('Block1')
         x = Conv2D(16, (3, 3), activation='relu', padding='same', name='block1_conv1')(inputs)
         x = BatchNormalization()(x)
@@ -65,22 +65,13 @@ class ImpulsoNet(object):
         x = Conv2D(64, (3, 3), activation='relu', padding='same', name='block3_conv3')(x)
         x = BatchNormalization()(x)
         x = MaxPooling2D((2, 2), strides=(2, 2), padding='same', name='block3_pool')(x)
-        """
+
         logger.info('Block4')
         x = Conv2D(64, (3, 3), activation='relu', padding='same', name='block4_conv1')(x)
         x = BatchNormalization()(x)
         x = Conv2D(64, (3, 3), activation='relu', padding='same', name='block4_conv2')(x)
         x = BatchNormalization()(x)
         x = Conv2D(64, (3, 3), activation='relu', padding='same', name='block4_conv3')(x)
-        x = BatchNormalization()(x)
-        x = MaxPooling2D((2, 2), strides=(2, 2), padding='same', name='block4_pool')(x)
-        """
-        logger.info('Block4')
-        x = Conv2D(128, (3, 3), activation='relu', padding='same', name='block4_conv1')(x)
-        x = BatchNormalization()(x)
-        x = Conv2D(128, (3, 3), activation='relu', padding='same', name='block4_conv2')(x)
-        x = BatchNormalization()(x)
-        x = Conv2D(128, (3, 3), activation='relu', padding='same', name='block4_conv3')(x)
         x = BatchNormalization()(x)
         x = MaxPooling2D((2, 2), strides=(2, 2), padding='same', name='block4_pool')(x)
 
@@ -95,11 +86,10 @@ class ImpulsoNet(object):
 
         logger.info('Full Connection')
         flattened = Flatten(name='flatten')(x)
-        x = Dense(256, activation='relu', name='fc1')(flattened)
+        x = Dense(512, activation='relu', name='fc1')(flattened)
         x = Dropout(0.5, name='dropout1')(x)
-        x = Dense(256, activation='relu', name='fc2')(x)
-        x = Dropout(0.5, name='dropout2')(x)
-        
+        x = Dense(512, activation='relu', name='fc2')(x)
+        x = Dropout(0.5, name='dropout2')(x)        
 
         logger.info('Output layer')
         predictions = Dense(input_h * input_w, activation='sigmoid', name='predictions')(x)
