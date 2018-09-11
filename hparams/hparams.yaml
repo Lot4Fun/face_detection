@@ -73,7 +73,7 @@ train:
         epsilon: null
         decay: 0.0
     Adam: # Below default parameters follow the proposed paper
-      enable: true
+      enable: false
       hparams:
         lr: 0.001
         beta_1: 0.9
@@ -103,7 +103,7 @@ train:
         epsilon: null
         decay: 0.0
     Nadam: # Below default parameters follow the proposed paper. It is recommended to use the default parameters.
-      enable: false
+      enable: true
       hparams:
         lr: 0.002
         beta_1: 0.9
