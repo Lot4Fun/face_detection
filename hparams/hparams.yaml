@@ -61,9 +61,9 @@ train:
     SGD:
       enable: false
       hparams:
-        lr: 0.01
+        lr: 0.02
         momentum: 0.9
-        decay: 0.0005
+        decay: 0.01
         nesterov: False
     RMSprop: # It is recommended to use the default parameters as below
       enable: false
@@ -95,7 +95,7 @@ train:
         epsilon: null
         decay: 0.0
     Adamax: # Below default parameters follow the proposed paper
-      enable: false
+      enable: true
       hparams:
         lr: 0.002
         beta_1: 0.9
@@ -103,7 +103,7 @@ train:
         epsilon: null
         decay: 0.0
     Nadam: # Below default parameters follow the proposed paper. It is recommended to use the default parameters.
-      enable: true
+      enable: false
       hparams:
         lr: 0.002
         beta_1: 0.9

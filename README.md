@@ -1,11 +1,11 @@
 # __Face Segmentation__
 
 ## Description
-Detect the face areas and visualize the areas as heatmap.
+Detect faces and visualize the results as heatmap.
 
 ## Demo
 These images are the latest results.  
-Not successfully detected if there are many or small faces.  
+Not successfully detected if there are mutiple or small faces.  
 
 ### 1st results
 ![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/1st/hamabe_minami_1.jpg)
@@ -16,12 +16,12 @@ Not successfully detected if there are many or small faces.
 ![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/1st/hamabe_minami_6.jpg)
 
 ### Best results at the moment
-![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/18th/hamabe_minami_1.jpg)
-![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/18th/hamabe_minami_2.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/18th/hamabe_minami_3.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/18th/hamabe_minami_4.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/18th/hamabe_minami_5.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/18th/hamabe_minami_6.jpg)
+![Sample1](https://github.com/pystokes/face_segmentation/blob/master/docs/19th/hamabe_minami_1.jpg)
+![Sample2](https://github.com/pystokes/face_segmentation/blob/master/docs/19th/hamabe_minami_2.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/19th/hamabe_minami_3.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/19th/hamabe_minami_4.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/19th/hamabe_minami_5.jpg)
+![Sample3](https://github.com/pystokes/face_segmentation/blob/master/docs/19th/hamabe_minami_6.jpg)
 
 ## Requirement
 tensorflow-gpu==1.4.0  

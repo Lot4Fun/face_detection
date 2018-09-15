@@ -126,6 +126,7 @@ class Impulso(object):
                     logger.info('Load model: ' + model)
                     self.hparams[self.args.exec_type]['model'] = model
                     modeler.model = load_model(model)
+                    modeler.model.summary()
         self.model = modeler.model
         
 
