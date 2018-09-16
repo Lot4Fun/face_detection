@@ -42,16 +42,6 @@ class Aggregator(object):
         logger.info('End init of Aggregator')
 
 
-    def download_data(self):
-        """
-        cifar10_path = os.path.join(IMPULSO_HOME, 'org/cifar-10-python.tar.gz')
-        if not os.path.exists(cifar10):
-            if not os.path.exists(os.path.dirname(cifar10_path)):
-                os.makedirs(os.path.dirname(cifar10_path), exist_ok=True)
-        """
-        pass
-
-
     def load_data(self):
         logger.info('Load dataset')
         resize_w = self.hparams['common']['resize']['width']
@@ -82,20 +72,6 @@ class Aggregator(object):
                 image = cv2.resize(image, (resize_w, resize_h))
                 images.append(image)
                 # Label image
-                """
-                # For ellipse data: BEGIN
-                label_image = np.zeros(org_h * org_w).reshape(org_h, org_w)
-                for face in box['BBox']:
-                    Rx = face['Rx']
-                    Ry = face['Ry']
-                    theta = face['Theta']
-                    Cx = face['Cx']
-                    Cy = face['Cy']
-                    label_image = label_image + self.get_ground_truth(org_h, org_w, Rx, Ry, theta, Cx, Cy)
-                label_image = cv2.resize(label_image, (resize_w, resize_h))
-                label_image = np.vectorize(int)(np.vectorize(bool)(label_image))
-                # For ellipse data: END
-                """
                 # For rectangle data: BEGIN
                 label_image = np.zeros(resize_h * resize_w).reshape(resize_h, resize_w)
                 for face in box['BBox']:

@@ -3,13 +3,5 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Ignore.
-data/
-work/
-datasets/*
-experiments/*
-org/*
-log/*
-
 # Keep.
 !.gitkeep

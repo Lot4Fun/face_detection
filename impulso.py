@@ -49,13 +49,6 @@ logger.addHandler(file_handler)
 
 class Impulso(object):
 
-    ### 後で追加したい機能
-    # latest機能：data_id, experiment_idを指定しない場合は最新のデータ，experimentを使用する
-    # Grid Search機能：Grid Searchできる機能を追加したい
-    #
-    ### 要注意
-    # utils.check_hparamsがまともに機能していない（特にinput_path, output_pathをhparamsに書くかどうか辺り）
-
     def __init__(self, args, hparams_yaml='hparams.yaml'):
         logger.info('Begin init of Impulso')
         self.args = args
@@ -114,9 +107,6 @@ class Impulso(object):
         logger.info('Load model')
         modeler = ImpulsoNet(self.args.exec_type, self.hparams)
         modeler.create_model()
-        if self.args.exec_type == 'train':
-            modeler.select_optimizer()
-            modeler.compile()
         if self.args.experiment_id and self.args.model_id:
             models = glob.glob(os.path.join(IMPULSO_HOME, 'experiments', self.args.experiment_id, 'models', '*'))
             while models:
@@ -127,6 +117,11 @@ class Impulso(object):
                     self.hparams[self.args.exec_type]['model'] = model
                     modeler.model = load_model(model)
                     modeler.model.summary()
+        elif self.args.exec_type == 'train':
+            modeler.select_optimizer()
+            modeler.compile()
+        else:
+            pass
         self.model = modeler.model
         
 
@@ -185,15 +180,14 @@ if __name__ == '__main__':
     elif args.exec_type == 'test':
         assert args.experiment_id, 'EXPERIMENT-ID must be specified.'
         assert args.model_id, 'MODEL-ID must be specified.'
+    elif args.exec_type == 'predict':
+        assert args.experiment_id, 'EXPERIMENT-ID must be specified.'
+        assert args.model_id, 'MODEL-ID must be specified.'
+        assert args.x_dir, 'X_DIR must be specified'
+        assert args.y_dir, 'Y_DIR must be specified'
+    else:
+        pass
     logger.info(args)
-
-    """
-    logger.info('Set source path.')
-    if args.exec_type in ['dataset', 'prepare']:
-        sys.path.append(os.path.join(IMPULSO_HOME, 'src'))
-    elif args.exec_type in ['train', 'validate', 'test', 'predict']:
-        sys.path.append(os.path.join(IMPULSO_HOME, 'experiment_id'))
-    """
     
     logger.info('Begin main processes.')
     impulso = Impulso(args, hparams_yaml='hparams.yaml')
@@ -210,9 +204,6 @@ if __name__ == '__main__':
 
     elif args.exec_type == 'validate':
         assert not args.exec_type, 'validate is still disable.'
-        #impulso.load_model()
-        #impulso.estimate()
-        #impulso.evaluate()
 
     elif args.exec_type == 'test':
         impulso.load_model()

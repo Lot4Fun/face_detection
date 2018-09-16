@@ -60,12 +60,12 @@ class Estimator(object):
         elif self.exec_type == 'predict':
             files = glob.glob(os.path.join(self.input_home, '*'))
             resize_h = self.hparams['common']['resize']['height']
-            resize_w = self.hparams['common']['resize']['height']
+            resize_w = self.hparams['common']['resize']['width']
             self.x, self.filename = [], []
             for file in files:
                 if os.path.splitext(file)[-1].lower() in ['.jpg', '.jpeg', '.png']:
                     image = cv2.imread(file)
-                    image = cv2.resize(image, (resize_w, resize_h))
+                    image = cv2.resize(image, (resize_w, resize_h), interpolation=cv2.INTER_LANCZOS4)
                     self.x.append(image)
                     self.filename.append(os.path.basename(file))
             self.x = np.array(self.x)
@@ -87,7 +87,7 @@ class Estimator(object):
             os.makedirs(os.path.join(self.output_home, 'figures'), exist_ok=True)
             # Save visualized image.
             resize_h = self.hparams['common']['resize']['height']
-            resize_w = self.hparams['common']['resize']['height']
+            resize_w = self.hparams['common']['resize']['width']
             for x, y, filename in zip(self.x, self.y, self.filename):
                 visualizer.save_image(x, y.reshape(resize_h, resize_w), os.path.join(self.output_home, 'figures', filename))
 
