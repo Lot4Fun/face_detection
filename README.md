@@ -8,7 +8,7 @@ Detect faces and visualize the results as heatmap.
 python impulso.py predict -e 0912-0121-1904 -m 70 -x ./tmp/input -y ./tmp/output
 ```
 
-### Results
+## Results
 Not successfully detected if there are mutiple or small faces.  
 ![Sample1](https://github.com/pystokes/face_segmentation/blob/master/tmp/output/figures/hamabe_minami_1.jpg)
 ![Sample2](https://github.com/pystokes/face_segmentation/blob/master/tmp/output/figures/hamabe_minami_2.jpg)
