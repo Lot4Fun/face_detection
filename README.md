@@ -50,7 +50,7 @@ python impulso.py test -e EXPERIMENT-ID -m MODEL-ID
 
 ### Predict
 ```
-python impulso.py estimate -e EXPERIMENT-ID -m MODEL-ID -x INPUT_DIR -y OUTPUT_DIR
+python impulso.py predict -e EXPERIMENT-ID -m MODEL-ID -x INPUT_DIR -y OUTPUT_DIR
 ```
 
 ## License
