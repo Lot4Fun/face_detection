@@ -2,109 +2,132 @@ common:
   resize:
     height: 128
     width: 128
-predict:
-  input_path: dummy
-  model: C:\Users\stokes\Documents\80_Project\11_face_segmentation\experiments\0912-0121-1904\models\model.00070-0.02-0.00-0.03-0.00.hdf5
-  output_path: dummy
+dataset:
+  random_seed: 1
+  input_path: null
+  test_split: 0.1
+  augmentation:
+    without_face: false
+    shift_down: 0 # Maximum ratio to shift down
+    balance_n_face: false
+    random_shift: 0 # Maximum pixels to shift only the input image upwards, downwards, to the left or right for robustness
+    rotate_minmax: unsupported # Rotate from -'rotate_minmax' to 'rotate_minmax' in degree
+    horizontal_flip: unsupported
+    vertial_flip: unsupported
+    shift_up: unsupported # Maximum ratio to shift up
+    random_slide: unsupported # Slide ground truth face area for robustness
 prepare:
-  data_id: 0909-1240-2137
-  experiment_id: 0912-0121-1904
-test:
-  input_path: dummy
-  model: dummy
-  output_path: dummy
+  data_id: dummy
+  experiment_id: dummy
 train:
   fit:
     batch_size: 16
+    epochs: 1000
+    verbose: 1
+    validation_split: 0.2
+    shuffle: true
+    initial_epoch: 0
     callbacks:
-      EarlyStopping:
-        enable: true
-        hparams:
-          min_delta: 1.0e-05
-          mode: auto
-          monitor: val_loss
-          patience: 10
-          verbose: 0
-      ModelCheckpoint:
-        enable: true
-        hparams:
-          filepath: ./experiments/0912-0121-1904/models/model.{epoch:05d}-{loss:.2f}-{acc:.2f}-{val_loss:.2f}-{val_acc:.2f}.hdf5
-          mode: auto
-          monitor: val_loss
-          period: 10
-          save_best_only: false
-          save_weights_only: false
-          verbose: 1
       ReduceLROnPlateau:
         enable: true
         hparams:
-          cooldown: 0
-          epsilon: 0.0001
-          factor: 0.2
-          min_lr: 1.0e-06
-          mode: auto
           monitor: val_loss
+          factor: 0.2
           patience: 5
           verbose: 1
-    epochs: 1000
-    initial_epoch: 0
-    shuffle: true
-    validation_split: 0.1
-    verbose: 1
+          mode: auto
+          epsilon: 0.0001
+          cooldown: 0
+          min_lr: 1.0e-06
+      ModelCheckpoint:
+        enable: true
+        hparams:
+          filepath: null
+          monitor: val_loss
+          verbose: 1
+          save_best_only: false
+          save_weights_only: false
+          mode: auto
+          period: 10
+      EarlyStopping:
+        enable: true
+        hparams:
+          monitor: val_loss
+          min_delta: 0.00001
+          patience: 10
+          verbose: 0
+          mode: auto
   optimizer:
-    Adadelta:
-      enable: false
-      hparams:
-        decay: 0.0
-        epsilon: null
-        lr: 1.0
-        rho: 0.95
-    Adagrad:
-      enable: false
-      hparams:
-        decay: 0.0
-        epsilon: null
-        lr: 0.01
-    Adam:
-      enable: false
-      hparams:
-        amsgrad: false
-        beta_1: 0.9
-        beta_2: 0.999
-        decay: 0.0
-        epsilon: null
-        lr: 0.001
-    Adamax:
-      enable: true
-      hparams:
-        beta_1: 0.9
-        beta_2: 0.999
-        decay: 0.0
-        epsilon: null
-        lr: 0.002
-    Nadam:
-      enable: false
-      hparams:
-        beta_1: 0.9
-        beta_2: 0.999
-        epsilon: null
-        lr: 0.002
-        schedule_decay: 0.004
-    RMSprop:
-      enable: false
-      hparams:
-        decay: 0.0
-        epsilon: null
-        lr: 0.001
-        rho: 0.9
     SGD:
       enable: false
       hparams:
-        decay: 0.01
         lr: 0.02
         momentum: 0.9
-        nesterov: false
+        decay: 0.01
+        nesterov: False
+    RMSprop: # It is recommended to use the default parameters as below
+      enable: false
+      hparams:
+        lr: 0.001
+        rho: 0.9
+        epsilon: null
+        decay: 0.0
+    Adam: # Below default parameters follow the proposed paper
+      enable: false
+      hparams:
+        lr: 0.001
+        beta_1: 0.9
+        beta_2: 0.999
+        epsilon: null
+        decay: 0.0
+        amsgrad: false
+    Adagrad: # It is recommended to use the default parameters as below
+      enable: false
+      hparams:
+        lr: 0.01
+        epsilon: null
+        decay: 0.0
+    Adadelta: # It is recommended to use the default parameters as below
+      enable: false
+      hparams:
+        lr: 1.0
+        rho: 0.95
+        epsilon: null
+        decay: 0.0
+    Adamax: # Below default parameters follow the proposed paper
+      enable: true
+      hparams:
+        lr: 0.002
+        beta_1: 0.9
+        beta_2: 0.999
+        epsilon: null
+        decay: 0.0
+    Nadam: # Below default parameters follow the proposed paper. It is recommended to use the default parameters.
+      enable: false
+      hparams:
+        lr: 0.002
+        beta_1: 0.9
+        beta_2: 0.999
+        epsilon: null
+        schedule_decay: 0.004
 validate:
   input_path: dummy
-  model: dummy
   output_path: dummy
+  model: dummy
+test:
+  input_path: dummy
+  output_path: dummy
+  model: dummy
+predict:
+  input_path: dummy
+  output_path: dummy
+  model: dummy
+postprocess:
+  merge_bbox:
+    filter_w: 10
+    filter_h: 10
+    sliding_window_h: 3
+    sliding_window_v: 3
+    detect_threshold: 0.3
+visualizer:
+  draw_element_bbox: false

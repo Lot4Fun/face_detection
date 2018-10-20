@@ -1,0 +1,5108 @@
+[
+    {
+        "BBox": [
+            {
+                "Left": 36,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 66,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 69,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 72,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 75,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 78,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 81,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 84,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 87,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 90,
+                "Width": 10,
+                "Height": 10
+            }
+        ],
+        "FileName": "hamabe_minami_1.jpg"
+    },
+    {
+        "BBox": [
+            {
+                "Left": 51,
+                "Top": 3,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 3,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 3,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 3,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 3,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 3,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 3,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 6,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 6,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 6,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 6,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 6,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 6,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 6,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 6,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 9,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 9,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 9,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 9,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 9,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 9,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 9,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 9,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 9,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 12,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 12,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 12,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 12,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 12,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 12,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 12,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 12,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 12,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 57,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 60,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 63,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 63,
+                "Width": 10,
+                "Height": 10
+            }
+        ],
+        "FileName": "hamabe_minami_2.jpg"
+    },
+    {
+        "BBox": [
+            {
+                "Left": 27,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 24,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 24,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 87,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 90,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 87,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 90,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 93,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 27,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 87,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 90,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 93,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 30,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 87,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 90,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 93,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 96,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 87,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 90,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 93,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 96,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 87,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 90,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 93,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 96,
+                "Top": 51,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 87,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 90,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 93,
+                "Top": 54,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 87,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 90,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 93,
+                "Top": 57,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 87,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 90,
+                "Top": 60,
+                "Width": 10,
+                "Height": 10
+            }
+        ],
+        "FileName": "hamabe_minami_3.jpg"
+    },
+    {
+        "BBox": [
+            {
+                "Left": 75,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 84,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            }
+        ],
+        "FileName": "hamabe_minami_4.jpg"
+    },
+    {
+        "BBox": [
+            {
+                "Left": 102,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 99,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 9,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 12,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 15,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 18,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 96,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 99,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 108,
+                "Top": 33,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 9,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 12,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 15,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 18,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 21,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 96,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 99,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 108,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 111,
+                "Top": 36,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 6,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 9,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 12,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 15,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 18,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 21,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 96,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 99,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 108,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 111,
+                "Top": 39,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 6,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 9,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 12,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 15,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 18,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 21,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 33,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 66,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 96,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 99,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 108,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 111,
+                "Top": 42,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 9,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 12,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 15,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 18,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 36,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 96,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 99,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 108,
+                "Top": 45,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 39,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 48,
+                "Width": 10,
+                "Height": 10
+            }
+        ],
+        "FileName": "hamabe_minami_5.jpg"
+    },
+    {
+        "BBox": [
+            {
+                "Left": 45,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 99,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 15,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 99,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 108,
+                "Top": 18,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 99,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 108,
+                "Top": 21,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 15,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 42,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 69,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 81,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 102,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 105,
+                "Top": 24,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 54,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 72,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 75,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 78,
+                "Top": 27,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 45,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 48,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            },
+            {
+                "Left": 51,
+                "Top": 30,
+                "Width": 10,
+                "Height": 10
+            }
+        ],
+        "FileName": "hamabe_minami_6.jpg"
+    }
+]

@@ -10,16 +10,10 @@ import json
 import datetime
 import glob
 import argparse
+import importlib
 import src.lib.utils as utils
-from src.Aggregator import Aggregator
-from src.Preparer import Preparer
-from src.Trainer import Trainer
-from src.Estimator import Estimator
-from src.Evaluator import Evaluator
 
 from src.model.ImpulsoNet import ImpulsoNet
-
-from keras.models import load_model
 
 from logging import DEBUG, INFO
 from logging import getLogger, StreamHandler, FileHandler, Formatter
@@ -29,7 +23,7 @@ IMPULSO_HOME = os.environ['IMPULSO_HOME']
 
 # Set loger.
 log_date = datetime.datetime.today().strftime('%Y%m%d')
-log_path = os.path.join(IMPULSO_HOME, f'log/log_{log_date}.log')
+log_path = os.path.join(IMPULSO_HOME, f'logs/log_{log_date}.log')
 logger = getLogger('impulso')
 logger.setLevel(DEBUG)
 
@@ -62,6 +56,8 @@ class Impulso(object):
 
     def dataset(self):
         logger.info('Begin dataset of Impulso')
+        from src.aggregator import Aggregator
+
         aggregator = Aggregator(self.args.exec_type, self.hparams)
         aggregator.load_data()
         aggregator.save_data()
@@ -71,40 +67,17 @@ class Impulso(object):
 
     def prepare(self):
         logger.info('Begin prepare of Impuslo')
+        from src.preparer import Preparer
+
         preparer = Preparer(self.args.exec_type, self.hparams, self.args.data_id)
         logger.info('EXPERIMENT-ID: ' + preparer.hparams[self.args.exec_type]['experiment_id'])
         logger.info('End prepare of Impulso')
 
 
-    def train(self):
-        logger.info('Begin train of Impulso')
-        trainer = Trainer(self.args.exec_type, self.hparams, self.model, self.args.model_id)
-        trainer.load_data()
-        trainer.get_callbacks()
-        trainer.begin_train()
-        logger.info('End train of Impulso')
-
-
-    def estimate(self):
-        logger.info('Begin estimate of Impulso')
-        print('BEGIN: ESTIMATE')
-        estimator = Estimator(self.args.exec_type, self.hparams, self.model, self.args.x_dir, self.args.y_dir)
-        estimator.load_data()
-        estimator.estimate()
-        estimator.save_results()
-        logger.info('End estimate of Impulso')
-
-
-    def evaluate(self):
-        logger.info('Begin evaluate of Impulso')
-        evaluator = Evaluator(self.args.exec_type, self.hparams)
-        evaluator.load_data()
-        evaluator.evaluate()
-        logger.info('End evaluate of Impulso')
-
-
-    def load_model(self):
+    def load(self):
         logger.info('Load model')
+        from keras.models import load_model
+
         modeler = ImpulsoNet(self.args.exec_type, self.hparams)
         modeler.create_model()
         if self.args.experiment_id and self.args.model_id:
@@ -124,6 +97,48 @@ class Impulso(object):
             pass
         self.model = modeler.model
         
+
+    def train(self):
+        logger.info('Begin train of Impulso')
+        module = importlib.import_module(f'experiments.{self.args.experiment_id}.src.trainer')
+        Trainer = getattr(module, 'Trainer')
+
+        trainer = Trainer(self.args.exec_type, self.hparams, self.model, self.args.model_id)
+        trainer.load_data()
+        trainer.get_callbacks()
+        trainer.begin_train()
+        logger.info('End train of Impulso')
+
+
+    def estimate(self):
+        logger.info('Begin estimate of Impulso')
+        if self.args.experiment_id:
+            module = importlib.import_module(f'experiments.{self.args.experiment_id}.src.estimator')
+            Estimator = getattr(module, 'Estimator')
+        else:
+            from src.estimator import Estimator
+
+        estimator = Estimator(self.args.exec_type, self.hparams, self.model, self.args.x_dir, self.args.y_dir)
+        estimator.load_data()
+        estimator.estimate()
+        estimator.get_merged_bboxes()
+        estimator.save_results()
+        logger.info('End estimate of Impulso')
+
+
+    def evaluate(self):
+        logger.info('Begin evaluate of Impulso')
+        if self.args.experiment_id:
+            module = importlib.import_module(f'experiments.{self.args.experiment_id}.src.evaluator')
+            Evaluator = getattr(module, 'Evaluator')
+        else:
+            from src.evaluator import Evaluator
+
+        evaluator = Evaluator(self.args.exec_type, self.hparams)
+        evaluator.load_data()
+        evaluator.evaluate()
+        logger.info('End evaluate of Impulso')
+
 
 if __name__ == '__main__':
 
@@ -199,19 +214,19 @@ if __name__ == '__main__':
         impulso.prepare()
 
     elif args.exec_type == 'train':
-        impulso.load_model()
+        impulso.load()
         impulso.train()
 
     elif args.exec_type == 'validate':
         assert not args.exec_type, 'validate is still disable.'
 
     elif args.exec_type == 'test':
-        impulso.load_model()
+        impulso.load()
         impulso.estimate()
         impulso.evaluate()
 
     elif args.exec_type == 'predict':
-        impulso.load_model()
+        impulso.load()
         impulso.estimate()
     
     else:
