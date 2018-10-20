@@ -3,9 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-
 datasets/*
-experiments/*
 logs/*
 org/*
 work/*
