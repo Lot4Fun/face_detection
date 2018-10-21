@@ -65,7 +65,7 @@ python impulso.py predict -e EXPERIMENT-ID -m MODEL-ID -x INPUT_DIR -y OUTPUT_DI
 [LotFun](https://github.com/pystokes)
 
 ## Specification
-### Data to be created with [Aggregator.py](https://github.com/pystokes/face_detection/blob/master/src/Aggregator.py)
+### Data to be created with [aggregator.py](https://github.com/pystokes/face_detection/blob/master/src/aggregator.py)
 - IMPULSO_HOME: Absolute path to directory [impulso.py](https://github.com/pystokes/face_detection/blob/master/impulso.py) exists
 
 |Usage phase|Type|Path|
