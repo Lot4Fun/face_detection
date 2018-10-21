@@ -1,4 +1,4 @@
-# __Face Segmentation__
+# __Face Detection__
 
 ## Description
 Detect faces and visualize the results as heatmap.
@@ -13,20 +13,21 @@ Not successfully detected if there are multiple or small faces.
 - Heatmap: Score of each pixel
 - Rectangle: Detected bounding box
 
-![Sample1](https://github.com/pystokes/face_segmentation/blob/master/tmp/output/figures/hamabe_minami_1.jpg)
-![Sample2](https://github.com/pystokes/face_segmentation/blob/master/tmp/output/figures/hamabe_minami_2.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/tmp/output/figures/hamabe_minami_3.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/tmp/output/figures/hamabe_minami_4.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/tmp/output/figures/hamabe_minami_5.jpg)
-![Sample3](https://github.com/pystokes/face_segmentation/blob/master/tmp/output/figures/hamabe_minami_6.jpg)
+![Sample1](https://github.com/pystokes/face_detection/blob/master/tmp/output/figures/hamabe_minami_1.jpg)
+![Sample2](https://github.com/pystokes/face_detection/blob/master/tmp/output/figures/hamabe_minami_2.jpg)
+![Sample3](https://github.com/pystokes/face_detection/blob/master/tmp/output/figures/hamabe_minami_3.jpg)
+![Sample4](https://github.com/pystokes/face_detection/blob/master/tmp/output/figures/hamabe_minami_4.jpg)
+![Sample5](https://github.com/pystokes/face_detection/blob/master/tmp/output/figures/hamabe_minami_5.jpg)
+![Sample6](https://github.com/pystokes/face_detection/blob/master/tmp/output/figures/hamabe_minami_6.jpg)
 
 ## Requirement
+Python3.6  
 tensorflow-gpu==1.4.0  
 Keras==2.1.4  
 
 ## Install
 ```
-git clone https://github.com/pystokes/face_segmentation
+https://github.com/pystokes/face_detection.git
 ```
 
 ## Usage
@@ -64,8 +65,8 @@ python impulso.py predict -e EXPERIMENT-ID -m MODEL-ID -x INPUT_DIR -y OUTPUT_DI
 [LotFun](https://github.com/pystokes)
 
 ## Specification
-### Data to be created with [Aggregator.py](https://github.com/pystokes/face_segmentation/blob/master/src/Aggregator.py)
-- IMPULSO_HOME: Absolute path to directory [impulso.py](https://github.com/pystokes/face_segmentation/blob/master/impulso.py) exists
+### Data to be created with [Aggregator.py](https://github.com/pystokes/face_detection/blob/master/src/Aggregator.py)
+- IMPULSO_HOME: Absolute path to directory [impulso.py](https://github.com/pystokes/face_detection/blob/master/impulso.py) exists
 
 |Usage phase|Type|Path|
 |:---|:---|:---|
